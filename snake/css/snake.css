@@ -1,18 +1,35 @@
 div {
-  display: block;
-  position: absolute;
-  margin: auto;
-  float: left;
-  height: 1000px;
-  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
 }
 
-.board {
+.row {
+  display: block;
   position: relative;
-  margin: auto;
-  height: 100%;
-  width: 100%
-  float: left
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.cell {
+  display: block;
+  float: left;
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+
+.row :first-child {
+  border-left: 1px solid black;
+}
+
+.board .row:last-child .cell {
+  border-bottom: 1px solid black;
 }
 
 .group:after {

@@ -89,6 +89,14 @@
   var View = Snakes.View = function (game, $el) {
     this.game = game;
     this.$el = $el;
+    for (var i = 0; i < 10; i ++) {
+      var $div = $('<div>').addClass('row');
+      this.$el.append($div);
+      for (var j = 0; j < 10; j ++) {
+        var $cell = $('<div>').addClass('cell').data('pos', [i, j]);
+        $div.append($cell);
+      }
+    }
     this.board = new Board();
     this.start();
     var view = this;
