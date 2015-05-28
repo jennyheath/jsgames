@@ -1,0 +1,22 @@
+div {
+  display: block;
+  position: absolute;
+  margin: auto;
+  float: left;
+  height: 1000px;
+  width: 1000px;
+}
+
+.board {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 100%
+  float: left
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
