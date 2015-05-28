@@ -1,0 +1,68 @@
+div {
+  position: relative;
+  margin: 0 auto;
+  width: 340px;
+}
+
+.cell.x {
+  font-size: 70px;
+  background-color: white;
+  color: blue;
+  text-align: center;
+}
+
+.cell.o {
+  font-size: 70px;
+  background-color: white;
+  color: purple;
+  text-align: center;
+}
+
+.cell {
+  background-color: grey;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+ul :first-child {
+  border-left: 10px solid black;
+}
+
+#board ul:last-child {
+  border-bottom: 10px solid black;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  position: relative;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.msg {
+  display: block;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+}
+
+.cell:hover {
+  background-color: yellow;
+}
+
+.group:after {
+    content: "";
+    display: block;
+    clear: both;
+  }

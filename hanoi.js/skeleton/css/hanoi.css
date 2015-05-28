@@ -1,0 +1,47 @@
+.tower {
+  position: relative;
+  border-bottom: 10px solid black;
+  float: left;
+  height: 90px;
+  width: 100px;
+  margin: 5px;
+}
+
+.disk.one {
+  border: 1px solid black;
+  background-color: red;
+  width: 50px;
+}
+.disk.two {
+  background-color: green;
+  border: 1px solid black;
+  width: 75px;
+}
+.disk.three {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 100px;
+}
+
+.disk {
+  display: block;
+  position: relative;
+  height: 30px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tower:hover {
+  border-color: grey;
+}
+
+.msg {
+  font-size: 20px;
+  color: black;
+}
